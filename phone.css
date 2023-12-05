@@ -1,0 +1,69 @@
+@media screen and (max-width:478px) {
+ body{
+  background-image: linear-gradient(to top,red, blue, rgb(102, 11, 11)) ;
+  width: 100%;
+  height: 100vh;
+ }
+ #box{
+  /* margin-top: 100px; */
+  width: 330px;
+  position: relative;
+  top: 300px;
+  box-shadow: 1px 1px 3px 1px gray;
+  animation: box 5s ;
+ }
+ #input-button{
+   display: flex;
+ }
+ 
+ #num{
+ width: 300px;
+ height: 50px;
+ padding-left: 10px;
+ margin-left: 0px;
+ }
+ 
+ #button{
+   width: 100px;
+   height: 50px;
+   color: white;
+   background-color: rgb(5, 5, 80);
+   }
+ 
+ 
+ 
+ @keyframes box{
+   0%{
+ transform: translateY(-500px);
+  }
+  100%{
+   transform: translateY(55px);
+  }
+ }
+ #grade{
+   position: relative;
+   top: 270px;
+   animation: grade 5s;
+ }
+ @keyframes grade {
+   0%{
+     transform: translateX(-500px);
+     }
+     100%{
+       transform: translateX(10px);
+     }
+ }
+ #flow{
+   animation: flow 15s infinite;
+ }
+ @keyframes flow {
+   0%{
+     transform: translateY(500px);
+     }
+     100%{
+       transform: translateY(-350px);
+     }
+   }
+ 
+
+}
